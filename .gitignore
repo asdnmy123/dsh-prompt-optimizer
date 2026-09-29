@@ -14,3 +14,15 @@ preview/*.tmp
 # 编辑器
 .vscode/
 .idea/
+
+# 凭据：一律不准进仓库
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+.npmrc
+.netrc
+.git-credentials
