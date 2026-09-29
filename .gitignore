@@ -1,0 +1,16 @@
+node_modules/
+pnpm-lock.yaml
+
+# 本地侦察料：从 DSH 应用包里扒出的参考源码，不入库
+scratch/
+
+# 临时/产物
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+preview/*.tmp
+
+# 编辑器
+.vscode/
+.idea/

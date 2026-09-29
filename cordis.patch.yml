@@ -1,0 +1,18 @@
+# ============================================================================
+# dsh-prompt-optimizer —— DSH bundle patch
+# ============================================================================
+# The plugin's "mount declaration": DSH stacks every bundle layer's patch at
+# startup, and this file inserts this plugin's one Loader row.
+#
+# The browser half is discovered from `dsh.client` in package.json, so the row
+# itself is bare: no config, no build step. Every runtime knob has a sane
+# default; see README.md for the config keys and how to set them here.
+#
+# Install (profile defaults to the active one):
+#   dsh plugin --profile desktop add link:<absolute path to this directory>
+# or from the Plugins page: Settings → Plugins → Install from disk.
+# ============================================================================
+
+- insert:
+    - id: dsh-prompt-optimizer
+      name: dsh-prompt-optimizer
